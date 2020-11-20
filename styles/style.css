@@ -1,0 +1,69 @@
+
+
+@keyframes ball_morph {
+	from {
+		width: 300px;
+		height: 300px;
+		border-radius: 150px;
+		background: yellow;
+	}
+	50% {
+		width: 330px;
+		height: 220px;
+		border-radius: 10px;
+		background: red;
+	}
+	to {
+		width: 220px;
+		height: 330px;
+		border-radius: 300px;
+		background: green;
+	}
+}
+
+.morphing_ball {
+	width: 220px;
+	height: 330px;
+	border-radius: 300px;
+	background: green;
+	animation-duration: 7s;
+	animation-name: ball_morph;
+}
+
+@keyframes back_ball_morph {
+	from {
+		width: 220px;
+		height: 330px;
+		border-radius: 300px;
+		background: green;
+	}
+	50% {
+		width: 600px;
+		height: 20px;
+		border-radius: 50px;
+		background: blue;
+	}
+	to {
+		width: 300px;
+		height: 300px;
+		border-radius: 150px;
+		background: yellow;
+	}
+}
+
+.back_morphing_ball {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	background: yellow;
+	animation-duration: 5s;
+	animation-name: back_ball_morph;
+}
+
+.ball {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	border-radius: 150px;
+	background: yellow;
+}
